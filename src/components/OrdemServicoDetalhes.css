@@ -1,0 +1,180 @@
+.ordem-servico-detalhes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .ordem-servico-detalhes-form-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .ordem-servico-detalhes-form-container h2 {
+    margin-top: 0;
+  }
+  
+  .ordem-servico-detalhes-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .ordem-servico-detalhes-form-container input,
+  .ordem-servico-detalhes-form-container select,
+  .ordem-servico-detalhes-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ordem-servico-detalhes-form-container textarea {
+    resize: vertical;
+  }
+  
+  .ordem-servico-detalhes-form-container button {
+    padding: 10px 20px;
+    background-color: #00A8FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ordem-servico-detalhes-form-container button:hover {
+    background-color: #45a049;
+  }
+
+  .table-container {
+    overflow-x: auto; /* Adicionamos um scroll horizontal caso a tabela seja maior que o container */
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    min-width: 120px;
+    white-space: nowrap; /* Impede a quebra de texto dentro das células */
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    margin-bottom: 16px;
+  }
+
+  .preview-image {
+    max-width: 100%; /* Limita a largura da imagem a 100% do contêiner pai */
+    height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção original */
+    max-height: 200px; /* Define uma altura máxima para as imagens */
+    object-fit: contain; /* Mantém a proporção da imagem e evita distorções */
+  }
+  
+  .photo-container img {
+    max-width: 100%; /* Garante que as imagens adicionais sigam o mesmo padrão de largura */
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  
+  .photo-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as fotos se movam para a linha seguinte se não houver espaço suficiente */
+    justify-content: space-between; /* Distribui as fotos uniformemente ao longo do contêiner */
+    margin-bottom: 20px;
+  }
+  
+  .photo-container .photo {
+    width: 48%; /* Coloca duas fotos por linha */
+    margin-bottom: 20px;
+  }
+  
+  .photo-container img {
+    width: 100%; /* Redimensiona automaticamente a largura da imagem para 100% do contêiner */
+    max-height: 200px; /* Define uma altura máxima para as fotos */
+    object-fit: cover; /* Ou 'contain' dependendo do efeito desejado */
+  }
+  
+  .photo-container .photo-antes img {
+    max-height: 150px; /* Ajuste a altura máxima conforme necessário */
+  }
+
+  .photo button {
+    margin-top: 5px; /* Ajuste conforme necessário */
+  }
+
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 200px; /* Ajuste conforme necessário */
+    object-fit: contain;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Estilos adicionais para responsividade */
+  @media (max-width: 768px) {
+    .ordem-servico-detalhes-form-container {
+      max-width: 100%;
+      overflow: hidden;
+    }
+  
+    .photo-container {
+      flex-direction: column;
+    }
+  
+    .photo-container .photo {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .buttons-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons-container button {
+    margin-right: 5px; /* Adicione uma margem direita para separar os botões */
+    align-items: center;
+  }
+
+  .bold-text {
+    font-weight: bold;
+    font-size: 16px;
+  }
+

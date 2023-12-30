@@ -1,0 +1,149 @@
+/* OrdemServicoForm.css */
+
+/* Estilos gerais para o corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para a div que centraliza o formulário */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Faz com que a div ocupe toda a altura da janela */
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Estilos para centralizar o formulário */
+.form-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-top: 0;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.manutencao-label,
+.servico-label {
+  align-self: flex-start;
+}
+
+.checkbox-options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-option input {
+  margin-right: 5px;
+}
+
+.checkbox-option.label-corretiva,
+.checkbox-option.label-informatica,
+.checkbox-option.label-limpeza,
+.checkbox-option.label-seguranca-trabalho {
+  margin-left: auto;
+}
+
+.checkbox-option.label-informatica {
+  margin-right: 10px;
+}
+
+.checkbox-option.label-limpeza {
+  margin-right: 5px;
+}
+
+.checkbox-option.label-seguranca-trabalho {
+  white-space: nowrap;
+}
+
+.form-container .separator-line {
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #00A8FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Adicione esse estilo CSS ao seu arquivo OrdemServicoForm.css */
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Para alinhar horizontalmente os botões */
+  gap: 80px; /* Espaço entre os botões, se desejado */
+}
+
+.button-horizontal {
+  padding: 5px 20px;
+  background-color: #00A8FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container button {
+  width: 150px; /* Ajuste conforme necessário */
+}
+
+.button-container button.button-minhas-ordens {
+  width: 150px; /* Largura maior para o botão "Minhas Ordens" */
+}
+

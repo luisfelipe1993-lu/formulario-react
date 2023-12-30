@@ -1,0 +1,121 @@
+/* Estilos gerais para o corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Estilos para a div que centraliza o conteúdo */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Estilos para o container da página de detalhes */
+.details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Alinha os itens verticalmente no centro */
+  margin-top: 20px; 
+}
+
+h1 {
+  text-align: center; /* Centraliza o título */
+  margin-top: 20px; /* Espaçamento superior para afastar o título do topo */
+}
+
+.container button {
+  padding: 10px 20px;
+  background-color: #00A8FF;
+  width: 20% ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para o texto de carregamento */
+.loading-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Estilos para o componente OrdemServicoPanel */
+.ordem-servico-panel {
+  /* Adicione estilos específicos para o seu componente OrdemServicoPanel aqui */
+}
+
+table {
+  width: 40%;
+  margin: 50px;
+  border-collapse: collapse;
+  border: 1px solid #333; /* Adicione esta linha para definir bordas */
+}
+
+/* Estilos para as células (td e th) da tabela */
+td, th {
+
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333; 
+  padding: 8px; /* Adiciona algum espaço dentro das células para melhor formatação */
+  position: relative;
+  text-align: center; /* Alinhe o texto no centro da célula */
+  width: 100%;
+}
+
+
+
+/* A última célula de cada linha não terá a linha vertical à direita */
+/*td:last-child, th:last-child {
+  border-right: none;
+}
+
+/* Estilos específicos para a célula de "Serviço" */
+td:nth-child(2), th:nth-child(2) {
+  border-left: 1px solid #333; /* Adiciona uma linha vertical à esquerda da célula de "Serviço" */
+  border-right: 1px solid #333;
+  padding: 8px;
+  position: relative;
+  box-sizing: border-box;
+  width: 50%; /* Isso fará com que a linha se estenda até a extremidade direita da célula */
+}
+
+
+/* Estilos para a célula de "Status" */
+td:nth-child(3), th:nth-child(3) {
+  border-bottom: 1px solid #333; /* Adiciona uma linha horizontal abaixo da célula de "Status" */
+  padding: 8px;
+  text-align: center;
+  width: 50%; /* Isso fará com que a linha da célula "Status" se estenda até o meio da célula */
+}
+
+
+/* Estilo para "Pendente" (vermelho) */
+.status-pendente {
+  background-color: red;
+  color: white;
+}
+
+/* Estilo para status concluída (verde) */
+.status-concluida {
+  background-color: green; /* Define a cor do texto como verde */
+  color:white;
+}
+
+
+/*th {
+  background-color: #f2f2f2;
+  color: #333;
+}*/
+
