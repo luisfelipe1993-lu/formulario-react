@@ -44,7 +44,7 @@ function App() {
   };
 
   return (
-    <Router basename='formulario-react'>
+    <Router>
       <Routes>
         <Route
           path="/"
