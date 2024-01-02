@@ -1,6 +1,6 @@
 // App.js
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
 import OrdemServicoForm from './components/OrdemServicoForm';
 import OrdemServicoDetalhes from './components/OrdemServicoDetalhes';
 import LoginRequisitante from './Login/LoginRequisitante';
@@ -47,47 +47,47 @@ function App() {
     <Router basename='formulario-react'>
       <Routes>
         <Route
-          path="/formulario-react/"
+          path="/"
           element={<Navigate to="/login" />}
         />
         <Route
-          path="/formulario-react/login"
+          path="/login"
           element={<LoginRequisitante onLogin={handleLogin} onToggleForm={handleToggleForm} />}
         />
         <Route
-          path="/formulario-react/cadastro"
+          path="/cadastro"
           element={<CadastroRequisitante onRegister={handleRegister} onToggleForm={handleToggleForm} />}
         />
         <Route
-          path="/formulario-react/login-tecnico"
+          path="/login-tecnico"
           element={<LoginTecnico onLoginTecnico={handleLogin} onToggleForm={handleToggleForm} />}
         />
         <Route
-          path="/formulario-react/cadastro-tecnico"
+          path="/cadastro-tecnico"
           element={<CadastroTecnico onRegisterTecnico={handleRegister} onToggleForm={handleToggleForm} />}
         />
         <Route
-          path="/formulario-react/painel-de-controle"
+          path="/painel-de-controle"
           element={<OrdemServicoPanelPage />}
         />
         {loggedIn && (
-          <Route path="/formulario-react/ordem-servico" element={<OrdemServicoForm />} />
+          <Route path="/ordem-servico" element={<OrdemServicoForm />} />
         )}
         {loggedIn && (
-          <Route path="/formulario-react/detalhes/:numero_ordem" element={<OrdemServicoDetalhes />} />
+          <Route path="/detalhes/:numero_ordem" element={<OrdemServicoDetalhes />} />
         )}
         {loggedIn && (
-          <Route path="/formulario-react/administrar-usuarios" element={<UsersAdminPage />} />
+          <Route path="/administrar-usuarios" element={<UsersAdminPage />} />
         )}
         {loggedIn && (
-          <Route path="/formulario-react/minhas-ordens" element={<MinhasOrdensPage />} />
+          <Route path="/minhas-ordens" element={<MinhasOrdensPage />} />
         )}
         <Route
-          path="/formulario-react/login-analista"
+          path="/login-analista"
           element={<LoginAnalista onLogin={handleLogin} onToggleForm={handleToggleForm}/>}
         />
         <Route
-          path="/formulario-react/*"
+          path="*"
           element={<NotFoundPage />}
         />
       </Routes>
